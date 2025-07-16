@@ -1,0 +1,15 @@
+Option 2: Re-Identification in a Single Feed
+
+Objective:
+
+Given a 15-second video (15sec_input_720p.mp4), identify each player and ensure that players who go out of frame and reappear are assigned the same identity as before.
+
+Instructions:
+
+Use the provided object detection model to detect players throughout the clip.
+
+Assign player IDs based on the initial few seconds.
+
+Maintain the same ID for players when they re-enter the frame later in the video (e.g., near the goal event).
+
+Your solution should simulate real-time re-identification and player tracking.
