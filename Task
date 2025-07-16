@@ -13,3 +13,18 @@ Assign player IDs based on the initial few seconds.
 Maintain the same ID for players when they re-enter the frame later in the video (e.g., near the goal event).
 
 Your solution should simulate real-time re-identification and player tracking.
+
+Process followed:
+The following steps were undertaken to build the Football Player Detection and Re Identification System:
+
+ 1. Frame Extraction: A 15-second football broadcast video was used as the input source. A total of 75 frames were extracted using OpenCV for annotation and training.
+ 2. Dataset Creation using Roboflow: Each frame was uploaded to Roboflow, where manual annotations were performed. The labeled categories included:
+ • Football players
+ • Referee
+ • Football
+ • Other objects (e.g., goalposts, etc.)
+ Data augmentation techniques such as flipping, brightness/contrast adjustment, and blurring were applied. The final dataset contained:
+ • 238 images total
+ • 222 images for training
+ • 11 images for validation
+ • 5 images for testing
